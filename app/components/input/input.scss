@@ -1,0 +1,102 @@
+@import '../../styles/variables';
+
+.input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: $color-light-grey;
+  padding-left: 10px;
+  font-size: 16px;
+  color: $color-grey;
+
+  &:focus {
+    border: 1px solid $color-blue;
+    color: $color-blue;
+  }
+
+  &--select {
+    // убираем стандартное отображение селекта
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+  }
+}
+
+input[name="form-request-checkbox-agree"] {
+  display: none;
+
+  + label {
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    color: $color-grey;
+    margin-bottom: 15px;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      background-color: $color-light-grey;
+      z-index: 105;
+    }
+  }
+
+  &:checked + label::before {
+    background-image: url('../images/icon-checkbox.png');
+    background-repeat: no-repeat;
+    background-size: 13px 10px;
+    background-position: 50% 50%;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+
+  &--text.active {
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 23px;
+      right: 13px;
+      width: 13px;
+      height: 2px;
+      background-color: $color-blue;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--select {
+
+    //добавляем треугольник
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 12px;
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-top: 10px solid $color-grey;
+    }
+  }
+}

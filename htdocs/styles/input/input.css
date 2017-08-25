@@ -1,0 +1,93 @@
+.input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #eee;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.input:focus {
+  border: 1px solid #48b;
+  color: #48b;
+}
+
+.input--select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none !important;
+}
+
+input[name="form-request-checkbox-agree"] {
+  display: none;
+}
+
+input[name="form-request-checkbox-agree"] + label {
+  display: block;
+  padding-left: 25px;
+  position: relative;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+input[name="form-request-checkbox-agree"] + label::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: #eee;
+  z-index: 105;
+}
+
+input[name="form-request-checkbox-agree"]:checked + label::before {
+  background-image: url("../images/icon-checkbox.png");
+  background-repeat: no-repeat;
+  background-size: 13px 10px;
+  background-position: 50% 50%;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper--text.active::before, .input-wrapper--text.active::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 23px;
+  right: 13px;
+  width: 13px;
+  height: 2px;
+  background-color: #48b;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.input-wrapper--text.active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.input-wrapper--select::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top: 10px solid #aaa;
+}

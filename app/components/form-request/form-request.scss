@@ -1,7 +1,28 @@
 @import '../../styles/variables';
 
 .form-request {
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: $color-white;
   width: 100%;
-  min-height: 340px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+
+  &__title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color-blue;
+    margin-bottom: 15px;
+    padding-left: 8px;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 50px;
+    color: $color-grey;
+  }
 }
