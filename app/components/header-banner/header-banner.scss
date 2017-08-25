@@ -1,14 +1,26 @@
 @import '../../styles/variables';
 
 .header-banner {
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 20px;
   background-color: $color-header-banner;
+  background-image: url('../images/header-banner-background-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: $color-white;
+    border-bottom: 5px solid $color-white;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   &__text {
-    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-white;
+    margin-bottom: 27px;
   }
 }

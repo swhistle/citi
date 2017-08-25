@@ -1,11 +1,26 @@
 .header-banner {
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 20px;
   background-color: #48b;
+  background-image: url("../images/header-banner-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-banner__title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+  padding-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .header-banner__text {
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 27px;
 }
 
 .wrapper {
@@ -29,10 +44,11 @@
 }
 
 .post__item {
-  background-color: #48b;
   margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .info {
