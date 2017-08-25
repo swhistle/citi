@@ -104,6 +104,7 @@
   }
   .info__list-container {
     width: 52%;
+    max-width: 585px;
     padding-top: 20px;
   }
   .info__title {
@@ -122,9 +123,31 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .info {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .info {
+    padding-bottom: 70px;
+  }
+  .info__list-container {
+    padding-top: 50px;
+  }
+  .info__title {
+    font-size: 48px;
+  }
+  .info__list {
+    padding-top: 55px;
+  }
+}
+
 .image-container--info {
   display: none;
   width: 44%;
+  max-width: 500px;
   margin-top: -35px;
 }
 

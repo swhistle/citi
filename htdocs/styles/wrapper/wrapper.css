@@ -19,3 +19,12 @@
     max-width: 1005px;
   }
 }
+
+@media (min-width: 1400px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .wrapper--post {
+    max-width: 1220px;
+  }
+}

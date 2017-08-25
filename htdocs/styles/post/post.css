@@ -40,6 +40,7 @@
   padding-right: 10px;
   position: relative;
   z-index: 10;
+  min-height: 150px;
 }
 
 .post__item-container::after {
@@ -95,6 +96,9 @@
 }
 
 @media (min-width: 1025px) {
+  .post__list {
+    padding-top: 70px;
+  }
   .post__item {
     cursor: pointer;
   }
@@ -111,5 +115,16 @@
   .post__link:focus .post__item-container {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@media (min-width: 1400px) {
+  .post__item {
+    width: calc(100%/3 - 10px);
+    margin: 5px;
+    margin-bottom: 25px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
 }

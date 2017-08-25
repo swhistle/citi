@@ -42,7 +42,10 @@
   .header-banner {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 30px;
+    padding-top: 20px;
+  }
+  .header-banner__text-container {
+    padding-left: 25px;
   }
   .header-banner__title {
     font-size: 48px;

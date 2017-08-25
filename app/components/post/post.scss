@@ -31,6 +31,7 @@
       padding-right: 10px;
       position: relative;
       z-index: 10;
+      min-height: 150px;
 
       &::after {
         display: block;
@@ -85,6 +86,10 @@
 
   @media #{$media-screen-desktop} {
 
+    &__list {
+      padding-top: 70px;
+    }
+
     &__item {
       cursor: pointer;
 
@@ -102,5 +107,16 @@
     &__link:focus &__item-container {
       transform: translateY(0);
     }
+  }
+
+  @media #{$media-screen-desktop-big} {
+
+    &__item {
+      width: calc(100%/3 - 10px);
+      margin: 5px;
+      margin-bottom: 25px;
+      flex-grow:2;
+    }
+
   }
 }

@@ -59,7 +59,7 @@ input[name="form-request-checkbox-agree"] {
     }
 
     &:focus {
-      outline: 1px solid $color-blue;
+      color: $color-blue;
     }
   }
 

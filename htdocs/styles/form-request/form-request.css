@@ -47,5 +47,8 @@
   .form-request {
     max-width: 290px;
     margin: 0;
+    margin-top: 10px;
+    margin-right: 100px;
+    padding: 20px;
   }
 }

@@ -89,6 +89,7 @@
 
     &__list-container {
       width: 52%;
+      max-width: 585px;
       padding-top: 20px;
     }
 
@@ -113,6 +114,26 @@
 
   @media #{$media-screen-desktop} {
 
+    margin-top: 25px;
+
+
+  }
+
+  @media #{$media-screen-desktop-big} {
+
+    padding-bottom: 70px;
+
+    &__list-container {
+      padding-top: 50px;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__list {
+      padding-top: 55px;
+    }
   }
 }
 
@@ -121,6 +142,7 @@
   &--info {
     display: none;
     width: 44%;
+    max-width: 500px;
     margin-top: -35px;
   }
 
@@ -129,9 +151,5 @@
     &--info {
       display: block;
     }
-  }
-
-  @media #{$media-screen-desktop} {
-
   }
 }

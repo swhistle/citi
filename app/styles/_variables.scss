@@ -1,9 +1,10 @@
 $tablet: 600px;
 $desktop: 1024px;
-$desktop-big: 1440px;
+$desktop-big: 1400px;
 
 $media-screen-tablet: '(min-width: #{$tablet})';
 $media-screen-desktop: '(min-width: #{$desktop + 1})';
+$media-screen-desktop-big: '(min-width: #{$desktop-big})';
 
 $color-white: #fff;
 $color-light-grey: #eee;

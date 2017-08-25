@@ -47,3 +47,10 @@
 .footnotes__item:nth-child(3)::before {
   content: "3";
 }
+
+@media (min-width: 1025px) {
+  .footnotes__list {
+    padding-bottom: 1px;
+    padding-left: 20px;
+  }
+}

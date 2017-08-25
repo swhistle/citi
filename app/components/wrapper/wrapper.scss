@@ -17,4 +17,12 @@
       max-width: 1005px;
     }
   }
+
+  @media #{$media-screen-desktop-big} {
+    max-width: 1200px;
+
+    &--post {
+      max-width: 1220px;
+    }
+  }
 }

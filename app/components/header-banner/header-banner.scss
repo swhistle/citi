@@ -42,7 +42,11 @@
   @media #{$media-screen-desktop} {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 30px;
+    padding-top: 20px;
+
+    &__text-container {
+      padding-left: 25px;
+    }
 
     &__title {
       font-size: 48px;

@@ -58,7 +58,7 @@ input[name="form-request-checkbox-agree"] + label::before {
 }
 
 input[name="form-request-checkbox-agree"] + label:focus {
-  outline: 1px solid #48b;
+  color: #48b;
 }
 
 input[name="form-request-checkbox-agree"]:checked + label::before {
