@@ -1,0 +1,11 @@
+.info {
+  background-color: #eee;
+}
+
+.info__image {
+  display: none;
+}
+
+.info__title {
+  display: none;
+}

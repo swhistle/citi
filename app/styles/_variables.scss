@@ -1,9 +1,4 @@
 $font-family-frutiger: 'FrutigerLTPro-Light', sans-serif;
-$font-family-frutiger-bold: 'FrutigerLTPro-Bold', sans-serif;
-$font-family-frutiger-extrablack: 'FrutigerLTPro-ExtraBlackCn', sans-serif;
-$font-family-playfair: 'Playfair Display', serif;
-$font-family-raleway: 'Raleway', sans-serif;
-$font-family-for-digits: sans-serif;
 
 $tablet: 600px;
 $desktop: 1024px;
@@ -11,73 +6,10 @@ $desktop-big: 1440px;
 
 $media-screen-mobile: '(max-width: #{$tablet - 1})';
 $media-screen-not-mobile: '(min-width: #{$tablet})';
-$media-screen-tablet: '(min-width: #{$tablet}) and (max-width: #{$desktop - 1})';
-$media-screen-desktop: '(min-width: #{$desktop})';
-$media-screen-not-desktop: '(max-width: #{$desktop - 1})';
-$media-screen-not-desktop-big: '(max-width: #{$desktop-big - 1})';
-$media-screen-not-tablet: '(max-height: 500px) and (min-width: #{$tablet})';
-$media-screen-not-tablet-horizontal: '(min-height: 501px) and (min-width: #{$tablet})';
 
-$color-gunmetal: #424559;
-$color-light-green: #00bf66;
-$color-text-green:#7ed321;
-$color-family-line-green: #9dd542;
-$color-white: #ffffff;
-$color-bg-light-grey: #fafafa;
-$color-border-share: #f6f6f6;
-$color-share-text: #424559;
-$color-share-line: #ededed;
-$color-avatar-text: #424559;
-$color-filtration-red: #f3966f;
-$color-bg-red-2: #e34478;
-$color-border-circle: rgba(151, 151, 151, 0.2);
-$color-border-pseudo: rgba(151, 151, 151, 0.4);
-$color-circle-red: #f6a623;
-$color-circle-orange: #f8ad1c;
-$color-circle-yellow: #f8e81c;
-$color-circle-light-yellow: #fcfd78;
-$color-circle-lemon: #e8e860;
-$color-circle-green-3: #c0d542;
-$color-circle-green-4: #a7d542;
-$color-circle-green-5: #9dd542;
-$color-tooltip: #131521;
-$color-family-line-yellow: #f7da42;
-$color-family-line-blue: #5acfd6;
-$color-family-line-red: #f3966f;
-$color-nav-accordion-hover: #fbfbfb;
-
-$color-home-page-background: #48c583;
-$color-home-page-aside: #cfbeb7;
-$color-home-page-aside-border: #3b55aa;
-$color-home-page-link: #ff8cab;
-$color-border: #979797;
-$color-border-red: #f87f73;
-
-$color-border-navigation: #f2f2f2;
-$color-family-life-gradient: linear-gradient(245deg, #17cbf8, #98d339);
-$color-family-invest-gradient: linear-gradient(240deg, #b81b77, #f3966f);
-$color-family-save-gradient: linear-gradient(65deg, #e4c51e, #d39239);
-$color-family-health-gradient: linear-gradient(65deg, #5acfd6, #3983d3);
-$color-bacground-accrodion: #fafafa;
-$color-plus-red: #ef899e;
-$color-border-arrow: #ff8cab;
-$color-border-item: #35384c;
-$color-filter-active: #f48556;
-$color-tag-border: #d8d8d8;
-$color-bg-lightgreen: #92c939;
-$color-article-text: #4a4a4a;
-$color-family-line-dark-blue: #3b56aa;
-
-$body-menu-opened-class: 'menu-opened';
-$body-auth-opened-class: 'auth-opened';
-$body-chat-opened-class: 'chat-opened';
-$body-goals-opened-class: 'goals-select-opened';
-
-
-$menu-width: 240px;
-$menu-collapsed-width: 60px;
-$home-page-aside-width: 32%;
-$home-page-padding-top: 11vh;
+$color-white: #fff;
+$color-grey: #eee;
+$color-header-banner: #48b;
 
 @mixin position-absolute {
   position: absolute;

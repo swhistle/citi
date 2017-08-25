@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.info {
+  background-color: $color-grey;
+
+  &__image {
+    display: none;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  // &__item {
+  //   background-color: $color-header-banner;
+  //   min-height: 170px;
+  //   margin-bottom: 20px;
+  // }
+}

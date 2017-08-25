@@ -1,0 +1,10 @@
+.post__list {
+  padding-top: 20px;
+}
+
+.post__item {
+  background-color: #48b;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}

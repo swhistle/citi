@@ -1,0 +1,56 @@
+.header-banner {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #48b;
+}
+
+.header-banner__text {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.form-request {
+  background-color: #fff;
+  width: 100%;
+  min-height: 340px;
+}
+
+.main-page {
+  background-color: #fff;
+}
+
+.post__list {
+  padding-top: 20px;
+}
+
+.post__item {
+  background-color: #48b;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.info {
+  background-color: #eee;
+}
+
+.info__image {
+  display: none;
+}
+
+.info__title {
+  display: none;
+}
+
+.footer-page {
+  background-color: #fff;
+}
+
+.footnotes {
+  background-color: #fff;
+}

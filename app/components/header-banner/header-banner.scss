@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.header-banner {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: $color-header-banner;
+
+  &__title {
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+.header-banner {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #48b;
+}
+
+.header-banner__text {
+  margin-bottom: 20px;
+}
