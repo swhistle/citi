@@ -7,7 +7,8 @@ $media-screen-not-mobile: '(min-width: #{$tablet})';
 
 $color-white: #fff;
 $color-light-grey: #eee;
-$color-header-banner: #48b;
+$color-grey: #aaa;
+$color-blue: #48b;
 
 @mixin position-absolute {
   position: absolute;
@@ -15,12 +16,6 @@ $color-header-banner: #48b;
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-@mixin pseudo {
-  display: block;
-  content: '';
-  position: absolute;
 }
 
 @mixin background-icons {
