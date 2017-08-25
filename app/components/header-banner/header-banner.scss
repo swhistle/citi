@@ -38,4 +38,19 @@
       max-width: 350px;
     }
   }
+
+  @media #{$media-screen-desktop} {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__text {
+      max-width: 500px;
+    }
+
+  }
 }

@@ -33,3 +33,10 @@
     padding-top: 25px;
   }
 }
+
+@media (min-width: 1025px) {
+  .form-request {
+    max-width: 290px;
+    margin: 0;
+  }
+}

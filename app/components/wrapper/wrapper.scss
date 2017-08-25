@@ -8,4 +8,13 @@
   @media #{$media-screen-tablet} {
     padding: 0 20px;
   }
+
+  @media #{$media-screen-desktop} {
+    padding: 0 5px;
+    max-width: 985px;
+
+    &--post {
+      max-width: 1005px;
+    }
+  }
 }

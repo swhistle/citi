@@ -1,7 +1,6 @@
 .info {
   background-color: #eee;
   margin-top: -115px;
-  padding-bottom: 15px;
 }
 
 .info__image {
@@ -80,6 +79,10 @@
   line-height: 1px;
 }
 
+.info__item:last-child .info__link {
+  border-bottom: none;
+}
+
 @media (min-width: 600px) {
   .info {
     margin-top: 35px;
@@ -104,9 +107,19 @@
   .info__list {
     padding-top: 30px;
   }
+  .info__link {
+    display: inline-block;
+  }
 }
 
 .image-container--info {
+  display: none;
   width: 44%;
   margin-top: -35px;
+}
+
+@media (min-width: 600px) {
+  .image-container--info {
+    display: block;
+  }
 }

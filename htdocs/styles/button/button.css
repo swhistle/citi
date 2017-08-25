@@ -9,6 +9,7 @@
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  cursor: pointer;
 }
 
 .button:focus {

@@ -32,4 +32,9 @@
     padding: 20px;
     padding-top: 25px;
   }
+
+  @media #{$media-screen-desktop} {
+    max-width: 290px;
+    margin: 0;
+  }
 }

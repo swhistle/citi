@@ -3,7 +3,6 @@
 .info {
   background-color: $color-light-grey;
   margin-top: -115px;
-  padding-bottom: 15px;
 
   &__image {
     display: none;
@@ -63,6 +62,10 @@
     }
   }
 
+  &__item:last-child &__link {
+      border-bottom: none;
+    }
+
   @media #{$media-screen-tablet} {
 
     margin-top: 35px;
@@ -87,10 +90,17 @@
       padding-left: 50px;
     }
 
-
     &__list {
       padding-top: 30px;
     }
+
+    &__link {
+      display: inline-block;
+    }
+
+  }
+
+  @media #{$media-screen-desktop} {
 
   }
 }
@@ -98,7 +108,19 @@
 .image-container {
 
   &--info {
+    display: none;
     width: 44%;
     margin-top: -35px;
+  }
+
+  @media #{$media-screen-tablet} {
+
+    &--info {
+      display: block;
+    }
+  }
+
+  @media #{$media-screen-desktop} {
+
   }
 }

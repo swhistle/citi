@@ -3,7 +3,7 @@ $desktop: 1024px;
 $desktop-big: 1440px;
 
 $media-screen-tablet: '(min-width: #{$tablet})';
-$media-screen-desktop: '(min-width: #{$desktop})';
+$media-screen-desktop: '(min-width: #{$desktop + 1})';
 
 $color-white: #fff;
 $color-light-grey: #eee;

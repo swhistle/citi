@@ -19,6 +19,7 @@
   }
 
   &--select {
+    cursor: pointer;
     // убираем стандартное отображение селекта
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -34,10 +35,11 @@ input[name="form-request-checkbox-agree"] {
 
   + label {
     display: block;
-    padding-left: 25px;
+    padding-left: 23px;
     position: relative;
     color: $color-grey;
     margin-bottom: 15px;
+    cursor: pointer;
 
     &::before {
       display: block;

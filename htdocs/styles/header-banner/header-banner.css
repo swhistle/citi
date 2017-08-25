@@ -37,3 +37,17 @@
     max-width: 350px;
   }
 }
+
+@media (min-width: 1025px) {
+  .header-banner {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+  }
+  .header-banner__title {
+    font-size: 48px;
+  }
+  .header-banner__text {
+    max-width: 500px;
+  }
+}

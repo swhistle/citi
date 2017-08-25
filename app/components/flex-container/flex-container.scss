@@ -1,10 +1,24 @@
 @import '../../styles/variables';
 
 .flex-container {
-  display: flex;
+    display: flex;
 
   &--info {
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+
+  &--header-banner {
+    display: block;
+  }
+
+  @media #{$media-screen-desktop} {
+
+    &--header-banner {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+    }
+
   }
 }
