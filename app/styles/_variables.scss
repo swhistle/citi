@@ -2,8 +2,8 @@ $tablet: 600px;
 $desktop: 1024px;
 $desktop-big: 1440px;
 
-$media-screen-mobile: '(max-width: #{$tablet - 1})';
-$media-screen-not-mobile: '(min-width: #{$tablet})';
+$media-screen-tablet: '(min-width: #{$tablet})';
+$media-screen-desktop: '(min-width: #{$desktop})';
 
 $color-white: #fff;
 $color-light-grey: #eee;

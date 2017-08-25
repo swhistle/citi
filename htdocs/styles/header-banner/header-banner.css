@@ -22,3 +22,18 @@
   color: #fff;
   margin-bottom: 27px;
 }
+
+@media (min-width: 600px) {
+  .header-banner {
+    padding: 30px;
+    padding-top: 50px;
+    background-image: url("../images/header-banner-background-not-mobile.jpg");
+  }
+  .header-banner__title {
+    display: inline-block;
+    font-size: 40px;
+  }
+  .header-banner__text {
+    max-width: 350px;
+  }
+}

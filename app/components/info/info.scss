@@ -62,4 +62,43 @@
       line-height: 1px;
     }
   }
+
+  @media #{$media-screen-tablet} {
+
+    margin-top: 35px;
+
+    &__image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &__list-container {
+      width: 52%;
+      padding-top: 20px;
+    }
+
+    &__title {
+      display: block;
+      font-size: 40px;
+      line-height: 1.2;
+      font-weight: bold;
+      color: $color-blue;
+      padding-left: 50px;
+    }
+
+
+    &__list {
+      padding-top: 30px;
+    }
+
+  }
+}
+
+.image-container {
+
+  &--info {
+    width: 44%;
+    margin-top: -35px;
+  }
 }

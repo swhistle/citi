@@ -24,3 +24,12 @@
   margin-left: 50px;
   color: #aaa;
 }
+
+@media (min-width: 600px) {
+  .form-request {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 25px;
+  }
+}

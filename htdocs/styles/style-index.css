@@ -23,10 +23,45 @@
   margin-bottom: 27px;
 }
 
+@media (min-width: 600px) {
+  .header-banner {
+    padding: 30px;
+    padding-top: 50px;
+    background-image: url("../images/header-banner-background-not-mobile.jpg");
+  }
+  .header-banner__title {
+    display: inline-block;
+    font-size: 40px;
+  }
+  .header-banner__text {
+    max-width: 350px;
+  }
+}
+
 .wrapper {
   width: auto;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-container--info {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .form-request {
@@ -54,6 +89,15 @@
   text-decoration: none;
   margin-left: 50px;
   color: #aaa;
+}
+
+@media (min-width: 600px) {
+  .form-request {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 25px;
+  }
 }
 
 .input {
@@ -253,6 +297,23 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
   line-height: 18px;
 }
 
+@media (min-width: 600px) {
+  .post__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 50px;
+  }
+  .post__item {
+    width: calc(50% - 10px);
+  }
+}
+
 .info {
   background-color: #eee;
   margin-top: -115px;
@@ -333,6 +394,37 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
 .info__link sup {
   font-size: 14px;
   line-height: 1px;
+}
+
+@media (min-width: 600px) {
+  .info {
+    margin-top: 35px;
+  }
+  .info__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .info__list-container {
+    width: 52%;
+    padding-top: 20px;
+  }
+  .info__title {
+    display: block;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #48b;
+    padding-left: 50px;
+  }
+  .info__list {
+    padding-top: 30px;
+  }
+}
+
+.image-container--info {
+  width: 44%;
+  margin-top: -35px;
 }
 
 .footer-page {
