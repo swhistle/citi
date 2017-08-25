@@ -108,4 +108,8 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  .post__link:focus .post__item-container {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }

@@ -10,11 +10,16 @@
   line-height: 1.2;
   text-align: center;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .button:focus {
   border: 1px solid #aaa;
   color: #aaa;
+}
+
+.button:hover, .button:active {
+  opacity: 0.8;
 }
 
 .button--submit {

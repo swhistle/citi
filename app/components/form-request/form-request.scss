@@ -24,6 +24,16 @@
     text-decoration: none;
     margin-left: 50px;
     color: $color-grey;
+    outline: none;
+
+    &:focus {
+      color: $color-dark-grey;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-blue;
+    }
   }
 
   @media #{$media-screen-tablet} {

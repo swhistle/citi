@@ -19,6 +19,9 @@
   }
 
   &--select {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
     cursor: pointer;
     // убираем стандартное отображение селекта
     -webkit-appearance: none;
@@ -40,6 +43,7 @@ input[name="form-request-checkbox-agree"] {
     color: $color-grey;
     margin-bottom: 15px;
     cursor: pointer;
+    outline: 0;
 
     &::before {
       display: block;
@@ -53,6 +57,10 @@ input[name="form-request-checkbox-agree"] {
       background-color: $color-light-grey;
       z-index: 105;
     }
+
+    &:focus {
+      outline: 1px solid $color-blue;
+    }
   }
 
   &:checked + label::before {
@@ -65,6 +73,7 @@ input[name="form-request-checkbox-agree"] {
 
 .input-wrapper {
   position: relative;
+  z-index: 5;
 
   &--text.active {
 
@@ -87,6 +96,7 @@ input[name="form-request-checkbox-agree"] {
   }
 
   &--select {
+    background-color: $color-light-grey;
 
     //добавляем треугольник
     &::before {
@@ -99,6 +109,7 @@ input[name="form-request-checkbox-agree"] {
       height: 0;
       border: 8px solid transparent;
       border-top: 10px solid $color-grey;
+      cursor: pointer;
     }
   }
 }

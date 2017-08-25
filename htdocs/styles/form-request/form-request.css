@@ -23,6 +23,15 @@
   text-decoration: none;
   margin-left: 50px;
   color: #aaa;
+  outline: none;
+}
+
+.form-request__link:focus {
+  color: #666;
+}
+
+.form-request__link:hover, .form-request__link:active {
+  color: #48b;
 }
 
 @media (min-width: 600px) {

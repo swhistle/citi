@@ -18,6 +18,9 @@
 }
 
 .input--select {
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -38,6 +41,7 @@ input[name="form-request-checkbox-agree"] + label {
   color: #aaa;
   margin-bottom: 15px;
   cursor: pointer;
+  outline: 0;
 }
 
 input[name="form-request-checkbox-agree"] + label::before {
@@ -53,6 +57,10 @@ input[name="form-request-checkbox-agree"] + label::before {
   z-index: 105;
 }
 
+input[name="form-request-checkbox-agree"] + label:focus {
+  outline: 1px solid #48b;
+}
+
 input[name="form-request-checkbox-agree"]:checked + label::before {
   background-image: url("../images/icon-checkbox.png");
   background-repeat: no-repeat;
@@ -62,6 +70,7 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
 
 .input-wrapper {
   position: relative;
+  z-index: 5;
 }
 
 .input-wrapper--text.active::before, .input-wrapper--text.active::after {
@@ -82,6 +91,10 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
           transform: rotate(-45deg);
 }
 
+.input-wrapper--select {
+  background-color: #eee;
+}
+
 .input-wrapper--select::before {
   display: block;
   content: '';
@@ -92,4 +105,5 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
   height: 0;
   border: 8px solid transparent;
   border-top: 10px solid #aaa;
+  cursor: pointer;
 }

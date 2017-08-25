@@ -98,5 +98,9 @@
         transform: translateY(0);
       }
     }
+
+    &__link:focus &__item-container {
+      transform: translateY(0);
+    }
   }
 }

@@ -13,10 +13,16 @@
   line-height: 1.2;
   text-align: center;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 
   &:focus {
     border: 1px solid $color-grey;
     color: $color-grey;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
   }
 
   &--submit {

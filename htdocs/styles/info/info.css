@@ -72,6 +72,16 @@
   line-height: 1.25;
   color: #48b;
   border-bottom: 1px dashed #aaa;
+  outline: 0;
+  transition: 0.3s ease;
+}
+
+.info__link:hover, .info__link:active {
+  color: rgba(68, 136, 187, 0.7);
+}
+
+.info__link:focus {
+  color: #666;
 }
 
 .info__link sup {
