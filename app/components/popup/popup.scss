@@ -55,6 +55,8 @@
     font-size: 0;
     z-index: 300;
     cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
 
     &::before,
     &::after {
@@ -67,10 +69,21 @@
       height: 3px;
       background-color: $color-dark-grey-4;
       transform: rotate(45deg);
+      transition: 0.3s ease;
     }
 
     &::after {
       transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:active {
+      border-color: $color-blue;
+
+      &::before,
+      &::after {
+        background-color: $color-blue;
+      }
     }
   }
 

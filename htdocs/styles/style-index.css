@@ -301,6 +301,8 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
   font-size: 0;
   z-index: 300;
   cursor: pointer;
+  outline: none;
+  transition: 0.3s ease;
 }
 
 .popup__close-button::before, .popup__close-button::after {
@@ -314,11 +316,20 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
   background-color: #444;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  transition: 0.3s ease;
 }
 
 .popup__close-button::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.popup__close-button:hover, .popup__close-button:active {
+  border-color: #48b;
+}
+
+.popup__close-button:hover::before, .popup__close-button:hover::after, .popup__close-button:active::before, .popup__close-button:active::after {
+  background-color: #48b;
 }
 
 @media (min-width: 600px) {
