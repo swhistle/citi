@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test</title>
+    <title>Citi</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/style-index.css">
   </head>
@@ -39,8 +39,10 @@
           </div>
           <input type="checkbox" id="form-request-checkbox-agree" name="form-request-checkbox-agree">
           <label for="form-request-checkbox-agree" tabindex="0">I agree with Terms &amp; Conditions</label>
-          <button type="submit" id="form-request-submit" class="button button--submit">Submit</button>
-          <a href="javascript:void(0);" class="form-request__link" title="">Hyperlink</a>
+          <div class="button-container button-container--form-request">
+            <button type="submit" id="form-request-submit" class="button button--blue">Submit</button>
+            <a href="javascript:void(0);" class="button button--transparent button--link" title="">Hyperlink</a>
+          </div>
         </form>
       </div>
     </header>
@@ -167,6 +169,20 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup">
+      <div class="popup__content">
+        <span class="popup__title">External link</span>
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+        </p>
+        <div class="button-container button-container--popup">
+          <button type="button" class="button button--transparent">Cancel</button>
+          <button type="button" class="button button--blue">Accept</button>
+        </div>
+        <button type="button" class="popup__close-button">X</button>
+      </div>
+    </div>
   <!-- <script src="scripts/test/test.js"></script> -->
   </body>
 </html>

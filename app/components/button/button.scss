@@ -2,12 +2,11 @@
 
 .button {
   display: inline-block;
+  text-decoration: none;
   height: 50px;
-  // margin-bottom: 15px;
   border: none;
   outline: none;
   border-radius: 2px;
-  width: 125px;
   height: 30px;
   font-size: 16px;
   line-height: 1.2;
@@ -15,21 +14,63 @@
   cursor: pointer;
   transition: opacity 0.3s ease;
 
-  &:focus {
-    border: 1px solid $color-grey;
-    color: $color-grey;
-  }
-
-  &:hover,
-  &:active {
-    opacity: 0.8;
-  }
-
-  &--submit {
+  &--blue {
     background-image: linear-gradient( 180deg, rgb(68,136,187), rgb(46,93,128));
     color: $color-light-grey;
+    width: 125px;
+
+    &:focus {
+      border: 1px solid $color-grey;
+      color: $color-grey;
+    }
+
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
 
     // background-image: -webkit-linear-gradient( -90deg, rgb(68,136,187) 0%, rgb(46,93,128) 100%);
     // background-image: -ms-linear-gradient( -90deg, rgb(68,136,187) 0%, rgb(46,93,128) 100%);
+  }
+
+  &--transparent {
+    color: $color-grey;
+    background-color: transparent;
+
+    &:focus {
+      color: $color-dark-grey;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-blue;
+    }
+  }
+
+  &--link {
+    padding-top: 5px;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: nowrap;
+
+  &--form-request {
+    justify-content: space-between;
+  }
+
+  &--popup {
+    justify-content: space-between;
+    margin-left: auto;
+    width: 220px;
+  }
+
+  @media #{$media-screen-desktop} {
+
+    &--form-request {
+      width: 220px;
+    }
+
   }
 }

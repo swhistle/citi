@@ -1,13 +1,13 @@
 @import '../styles/variables';
 
-@import 'header-banner/header-banner';
-
 @import 'wrapper/wrapper';
 @import 'flex-container/flex-container';
-@import 'form-request/form-request';
 @import 'input/input';
 @import 'button/button';
+@import 'popup/popup';
 
+@import 'header-banner/header-banner';
+@import 'form-request/form-request';
 @import 'main-page/main-page';
 
 @import 'post/post';
