@@ -19,7 +19,7 @@
             Ut enim ad minim veniam, quis nostrud
           </p>
         </div>
-        <form action="" method="post" class="form-request">
+        <form action="" method="post" class="form-request js-form-request">
           <span class="form-request__title">Request form</span>
           <div class="input-wrapper input-wrapper--text">
             <input type="text" id="form-request-email" name="form-request-email" class="input input--email" placeholder="Enter your E-Mail">
@@ -28,7 +28,7 @@
             <input type="text" id="form-request-name" name="form-request-name" class="input input--name" placeholder="Enter your name">
           </div>
           <div class="input-wrapper input-wrapper--select">
-            <select name="form-request-select-country" class="input input--select">
+            <select name="form-request-select-country" id="form-request-select-country" class="input input--select">
               <option value="default">Select your country</option>
               <option value="russia">Russia</option>
               <option value="сanada">Canada</option>
@@ -184,6 +184,7 @@
       </div>
     </div>
 
+  <script src="scripts/form-request/form-request.js"></script>
   <script src="scripts/popup/popup.js"></script>
   </body>
 </html>

@@ -12,6 +12,10 @@
   color: #aaa;
 }
 
+.input.error {
+  border: 1px solid #b44;
+}
+
 .input:focus {
   border: 1px solid #48b;
   color: #48b;
