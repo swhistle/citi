@@ -80,6 +80,14 @@ input[name="form-request-checkbox-agree"] {
   z-index: 5;
   background-color: $color-light-grey;
 
+  &.error {
+    // background-color: transparent;
+
+    .tooltip {
+      display: block;
+    }
+  }
+
   &--text.active {
 
     .placeholder {
@@ -140,11 +148,11 @@ input[name="form-request-checkbox-agree"] {
   font-size: 0;
   width: 15px;
   height: 14px;
-  background: none;
   border: none;
   outline: none;
   cursor: pointer;
   z-index: 20;
+  background: none;
 
   &::before,
   &::after {
@@ -162,5 +170,37 @@ input[name="form-request-checkbox-agree"] {
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+.tooltip {
+  display: none;
+  width: 175px;
+  min-height: 35px;
+  background-color: $color-red;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 50;
+  top: -48px;
+  left: calc(50% - 85px);
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $color-light-grey;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 10px);
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid $color-red;
   }
 }

@@ -9,6 +9,7 @@ var selectCountry = document.getElementById("form-request-select-country");
 var checkbox = document.getElementById("form-request-checkbox-agree");
 var emailField = document.querySelector(".js-field-email");
 var nameField = document.querySelector(".js-field-name");
+var selectField = document.querySelector(".js-field-select");
 var buttonRemove = document.querySelectorAll(".js-value-remove");
 var error = document.getElementsByClassName("error");
 
@@ -37,8 +38,10 @@ function validation(e) {
 
   if (selectCountry.value == "default") {
     selectCountry.classList.add("error");
+    selectField.classList.add("error");
   } else {
     selectCountry.classList.remove("error");
+    selectField.classList.remove("error");
   }
 
   if (!checkbox.checked) {

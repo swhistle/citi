@@ -140,6 +140,10 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
   background-color: #eee;
 }
 
+.input-wrapper.error .tooltip {
+  display: block;
+}
+
 .input-wrapper--text.active .placeholder {
   font-size: 10px;
   top: 3px;
@@ -189,11 +193,11 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
   font-size: 0;
   width: 15px;
   height: 14px;
-  background: none;
   border: none;
   outline: none;
   cursor: pointer;
   z-index: 20;
+  background: none;
 }
 
 .button-close::before, .button-close::after {
@@ -213,6 +217,38 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
 .button-close::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.tooltip {
+  display: none;
+  width: 175px;
+  min-height: 35px;
+  background-color: #b44;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 50;
+  top: -48px;
+  left: calc(50% - 85px);
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #eee;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.tooltip::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 10px);
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top: 10px solid #b44;
 }
 
 .button {
