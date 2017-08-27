@@ -27,7 +27,7 @@ function validation(e) {
     emailField.classList.remove("error");
   }
 
-  if(userName.value.match(namePattern)) {
+  if((userName.value.match(namePattern) != null) || userName.value == "") {
     userName.classList.add("error");
     nameField.classList.add("error");
   } else {
