@@ -57,6 +57,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 250px;
 }
 
 .button-container--popup {

@@ -1,5 +1,11 @@
 @import '../../styles/variables';
 
+input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 .input {
   display: block;
   width: 100%;
@@ -24,6 +30,9 @@
     border: 1px solid $color-blue;
   }
 
+  &--text {
+  }
+
   &--select {
     background-color: transparent;
     cursor: pointer;
@@ -34,6 +43,10 @@
     text-overflow: '';
     -ms-appearance: none;
     appearance: none!important;
+
+    &::-ms-expand {
+     display: none;
+    }
   }
 }
 
@@ -182,7 +195,7 @@ input[name="form-request-checkbox-agree"] {
   border-radius: 2px;
   position: absolute;
   z-index: 50;
-  top: -48px;
+  top: -47px;
   left: calc(50% - 85px);
   padding: 10px 15px;
   font-size: 16px;
@@ -196,7 +209,7 @@ input[name="form-request-checkbox-agree"] {
     display: block;
     content: '';
     position: absolute;
-    top: 100%;
+    top: 98%;
     left: calc(50% - 10px);
     width: 0;
     height: 0;

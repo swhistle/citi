@@ -8,11 +8,12 @@ var checkbox = document.getElementById("form-request-checkbox-agree");
 var emailField = document.querySelector(".js-field-email");
 var nameField = document.querySelector(".js-field-name");
 var selectField = document.querySelector(".js-field-select");
-var buttonRemove = document.querySelectorAll(".js-value-remove");
+var buttonRemoveEmail = document.querySelector(".js-email-remove");
+var buttonRemoveName = document.querySelector(".js-name-remove");
 var error = document.getElementsByClassName("error");
 
 var adrPattern = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i;
-var namePattern = /[a-zа-я- ]/i;
+var namePattern = /[^a-zа-я -]/i;
 
 form.addEventListener("submit", validation);
 
@@ -26,7 +27,7 @@ function validation(e) {
     emailField.classList.remove("error");
   }
 
-  if(namePattern.test(userName.value) == false) {
+  if(userName.value.match(namePattern)) {
     userName.classList.add("error");
     nameField.classList.add("error");
   } else {
@@ -74,13 +75,15 @@ function changePlaceholder(input, field) {
 
 //стереть значение текстового поля при нажатии на X (delete)
 
-buttonRemove.forEach(function(button, i, buttonRemove) {
-  button.addEventListener("click", removeValue);
+buttonRemoveEmail.addEventListener("click", function() {
+  removeValue(email);
 });
 
-function removeValue() {
-  this.closest(".input-wrapper").firstElementChild.value = "";
-  this.closest(".input-wrapper").classList.remove("active");
+buttonRemoveName.addEventListener("click", function() {
+  removeValue(userName);
+});
+
+function removeValue(element) {
+  element.value = "";
+  element.parentElement.classList.remove("active");
 }
-
-
