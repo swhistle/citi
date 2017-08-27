@@ -68,24 +68,24 @@
   border: none;
   outline: none;
   border-radius: 3px;
-  background-color: #eee;
+  background-color: transparent;
   padding-left: 10px;
   font-size: 16px;
   color: #aaa;
+  position: relative;
+  z-index: 10;
 }
 
 .input.error {
   border: 1px solid #b44;
+  color: #b44;
 }
 
 .input:focus {
   border: 1px solid #48b;
-  color: #48b;
 }
 
 .input--select {
-  position: relative;
-  z-index: 10;
   background-color: transparent;
   cursor: pointer;
   -webkit-appearance: none;
@@ -137,28 +137,25 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
 .input-wrapper {
   position: relative;
   z-index: 5;
-}
-
-.input-wrapper--text.active::before, .input-wrapper--text.active::after {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 23px;
-  right: 13px;
-  width: 13px;
-  height: 2px;
-  background-color: #48b;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.input-wrapper--text.active::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.input-wrapper--select {
   background-color: #eee;
+}
+
+.input-wrapper--text.active .placeholder {
+  font-size: 10px;
+  top: 3px;
+}
+
+.input-wrapper--text.active .button-close {
+  display: block;
+}
+
+.input-wrapper--text.error .placeholder {
+  color: #b44;
+}
+
+.input-wrapper--text.error .button-close::before,
+.input-wrapper--text.error .button-close::after {
+  background-color: #b44;
 }
 
 .input-wrapper--select::before {
@@ -172,6 +169,50 @@ input[name="form-request-checkbox-agree"]:checked + label::before {
   border: 8px solid transparent;
   border-top: 10px solid #aaa;
   cursor: pointer;
+}
+
+.placeholder {
+  display: inline-block;
+  font-size: 16px;
+  color: #aaa;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  z-index: 6;
+}
+
+.button-close {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  font-size: 0;
+  width: 15px;
+  height: 14px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.button-close::before, .button-close::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 1px;
+  width: 13px;
+  height: 2px;
+  background-color: #48b;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 20;
+}
+
+.button-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .button {

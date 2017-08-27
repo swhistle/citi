@@ -8,23 +8,23 @@
   border: none;
   outline: none;
   border-radius: 3px;
-  background-color: $color-light-grey;
+  background-color: transparent;
   padding-left: 10px;
   font-size: 16px;
   color: $color-grey;
+  position: relative;
+  z-index: 10;
 
   &.error {
     border: 1px solid $color-red;
+    color: $color-red;
   }
 
   &:focus {
     border: 1px solid $color-blue;
-    color: $color-blue;
   }
 
   &--select {
-    position: relative;
-    z-index: 10;
     background-color: transparent;
     cursor: pointer;
     // убираем стандартное отображение селекта
@@ -78,29 +78,33 @@ input[name="form-request-checkbox-agree"] {
 .input-wrapper {
   position: relative;
   z-index: 5;
+  background-color: $color-light-grey;
 
   &--text.active {
 
-    &::before,
-    &::after {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 23px;
-      right: 13px;
-      width: 13px;
-      height: 2px;
-      background-color: $color-blue;
-      transform: rotate(45deg);
+    .placeholder {
+      font-size: 10px;
+      top: 3px;
     }
 
-    &::after {
-      transform: rotate(-45deg);
+    .button-close {
+      display: block;
+    }
+  }
+
+  &--text.error {
+
+    .placeholder {
+      color: $color-red;
+    }
+
+    .button-close::before,
+    .button-close::after {
+      background-color: $color-red;
     }
   }
 
   &--select {
-    background-color: $color-light-grey;
 
     //добавляем треугольник
     &::before {
@@ -115,5 +119,48 @@ input[name="form-request-checkbox-agree"] {
       border-top: 10px solid $color-grey;
       cursor: pointer;
     }
+  }
+}
+
+.placeholder {
+  display: inline-block;
+  font-size: 16px;
+  color: $color-grey;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  z-index: 6;
+}
+
+.button-close {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  font-size: 0;
+  width: 15px;
+  height: 14px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 20;
+
+  &::before,
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 1px;
+    width: 13px;
+    height: 2px;
+    background-color: $color-blue;
+    transform: rotate(45deg);
+    z-index: 20;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
